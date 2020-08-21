@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "562665830721",
+    "firebase_url": "https://come-together-ba225.firebaseio.com",
+    "project_id": "come-together-ba225",
+    "storage_bucket": "come-together-ba225.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562665830721:android:3726f58eb1f16526c3c9c0",
+        "android_client_info": {
+          "package_name": "com.example.cometogether"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562665830721-0hd68go0c37q2trbtf1araqkj1pgrecd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cometogether",
+            "certificate_hash": "82b571347009fec4eb163c14f4ab0b1ab18d97d6"
+          }
+        },
+        {
+          "client_id": "562665830721-9h56b3t42moj73hq57a5t2r3t06jornp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7w3CsiWW8X2VhmttYFyXN6l2IZfcTXKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562665830721-9h56b3t42moj73hq57a5t2r3t06jornp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

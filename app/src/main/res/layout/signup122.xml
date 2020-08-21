@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context=".signup122">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#EAECEE">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:text="Phone number"
+            android:textSize="25dp"
+            android:textColor="#1B2631"
+            />
+
+        <EditText
+            android:id="@+id/phonenuber"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:inputType="phone"
+            android:text=""
+            android:background="@color/cardview_light_background"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="100dp"
+            android:text="Youtube Channel"
+            android:textSize="25dp"
+            android:textColor="#1B2631"
+
+            />
+
+        <EditText
+            android:id="@+id/youtube"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="90dp"
+            android:inputType="text"
+            android:text=""
+            android:background="@color/cardview_light_background"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="170dp"
+            android:text="Facebook"
+            android:textSize="25dp"
+            android:textColor="#1B2631"
+            />
+
+        <EditText
+            android:id="@+id/facebook"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="160dp"
+            android:inputType="text"
+            android:text=""
+            android:background="@color/cardview_light_background"
+            />
+
+        <Button
+            android:id="@+id/uploud_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_marginTop="240dp"
+            android:layout_gravity="center_horizontal"
+            android:text="uploud picture"
+            android:clickable="false"
+            android:textColor="#1B2631"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="310dp"
+            android:text="About yourself"
+            android:textSize="25dp"
+            android:textColor="#1B2631"
+
+            />
+
+        <EditText
+            android:id="@+id/about_yourself"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="340dp"
+            android:inputType="text"
+            android:text=""
+            android:background="@color/cardview_light_background"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="420dp"
+            android:text="Instruments"
+            android:textSize="25dp"
+            android:textColor="#1B2631"
+            />
+
+        <Button
+            android:id="@+id/new_instrument_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="450dp"
+            android:text="add instrument"
+            android:onClick="new_instrument"
+            />
+
+        <FrameLayout
+            android:id="@+id/new_instrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:visibility="invisible">
+
+        </FrameLayout>
+
+
+
+
+    </FrameLayout>
+
+        <Button
+            android:id="@+id/save_bt"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:textSize="30dp"
+            android:text="Save"
+            android:onClick="save_user"
+            android:textColor="#1B2631"
+            android:background="#E8DAEF"
+            />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

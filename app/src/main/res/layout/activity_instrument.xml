@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context=".InstrumentActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAECEE"
+            android:text="Which Instrument Do You Play?"
+            android:layout_gravity="start"
+            android:textColor="#100A0A"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/choose_guitar"
+            android:onClick="choose_guitar_instrument"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Guitar"
+            android:layout_marginTop="60dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/choose_piano"
+            android:onClick="choose_piano_instrument"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Piano"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/choose_drums"
+            android:onClick="choose_drum_instrument"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Drums"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="right"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/choose_singing"
+            android:onClick="choose_singing_instrument"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Singing"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="70dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/choose_search_instrument"
+            android:onClick="search_instrument"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Search"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="70dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Spinner
+            android:id="@+id/instrumnet_spinner"
+            android:onClick="choose_spinner_instrument"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="70dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"/>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

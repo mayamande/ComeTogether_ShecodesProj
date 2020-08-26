@@ -8,6 +8,12 @@ public class Instrument {
     public Instrument() {
     }
 
+    public Instrument(int level, String instrument_name, String genre) {
+        this.level = level;
+        this.instrument_name = instrument_name;
+        this.genre = genre;
+    }
+
     public Instrument(String ins_details){
 
     }

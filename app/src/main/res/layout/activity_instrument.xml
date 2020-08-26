@@ -8,10 +8,12 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
+        android:paddingVertical="20dp"
+        android:layout_marginBottom="500dp"
         >
 
         <TextView
@@ -26,7 +28,7 @@
 
         <Button
             android:id="@+id/choose_guitar"
-            android:onClick="choose_guitar_instrument"
+            android:onClick="choose_intrument"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:text="Guitar"
@@ -38,7 +40,7 @@
 
         <Button
             android:id="@+id/choose_piano"
-            android:onClick="choose_piano_instrument"
+            android:onClick="choose_intrument"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:text="Piano"
@@ -51,7 +53,7 @@
 
         <Button
             android:id="@+id/choose_drums"
-            android:onClick="choose_drum_instrument"
+            android:onClick="choose_intrument"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:text="Drums"
@@ -64,7 +66,7 @@
 
         <Button
             android:id="@+id/choose_singing"
-            android:onClick="choose_singing_instrument"
+            android:onClick="choose_intrument"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:text="Singing"
@@ -102,9 +104,221 @@
             android:layout_marginRight="70dp"
             android:textColor="#100A0A"
             android:background="#EAECEE"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_marginTop="270dp"
+        tools:layout_marginBottom="290dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#EAECEE"
+        android:text="Which Level?"
+        android:textAlignment="center"
+        android:textColor="#100A0A"
+        android:textSize="25sp"
+         />
+
+        <Button
+            android:id="@+id/btn_lvl1"
+            android:onClick="choose_lvl"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="1"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/btn_lvl2"
+            android:onClick="choose_lvl"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="2"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="110dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/btn_lvl3"
+            android:onClick="choose_lvl"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="3"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="110dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/btn_lvl4"
+            android:onClick="choose_lvl"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="4"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
 
     </FrameLayout>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingVertical="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="375dp"
+        >
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAECEE"
+            android:text="Which Genre Do You Play?"
+            android:layout_gravity="start"
+            android:textColor="#100A0A"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/choose_Rock"
+            android:onClick="choose_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Rock"
+            android:layout_marginTop="60dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/choose_Pop"
+            android:onClick="choose_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Pop"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/choose_Indie"
+            android:onClick="choose_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Indie"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="right"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/choose_Classical"
+            android:onClick="choose_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Classical"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="70dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/choose_search_genre"
+            android:onClick="search_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Search"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="70dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+        <Spinner
+            android:id="@+id/genre_spinner"
+            android:onClick="choose_spinner_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="70dp"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:onClick="btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:text="Save"
+            android:background="#E8DAEF"
+            android:textColor="#100A0A"
+            android:textSize="20sp"
+
+            />
+
+        <Button
+            android:onClick="btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Cancel"
+            android:textColor="#100A0A"
+            android:background="#EAECEE"
+            android:textSize="20sp"
+            />
+
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

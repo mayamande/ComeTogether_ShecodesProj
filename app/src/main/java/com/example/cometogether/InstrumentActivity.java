@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,14 +19,18 @@ public class InstrumentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_instrument);
     }
+    //get user info from intent =
+    Intent intent= getIntent();
+    private int userid= intent.getIntExtra("userid",0);
+    private String [] fields={intent.getStringExtra("email"), intent.getStringExtra("youtube"), intent.getStringExtra("facebook"), intent.getStringExtra("about")};
 
     //create default instrument -
-     String inst="Guitar";
-    int a= change_btn_color((Button) findViewById (R.id.choose_guitar), 1);
-    int lvl=1;
-    int b= change_btn_color((Button) findViewById (R.id.btn_lvl1), 1);
-    String genre="Classical";
-    int c=change_btn_color((Button) findViewById (R.id.choose_Classical), 1);
+     private String inst="Guitar";
+    private int a= change_btn_color((Button) findViewById (R.id.choose_guitar), 1);
+    private int lvl=1;
+    private int b= change_btn_color((Button) findViewById (R.id.btn_lvl1), 1);
+    private String genre="Classical";
+    private int c=change_btn_color((Button) findViewById (R.id.choose_Classical), 1);
 
     private int change_btn_color(Button btn, int col){
         if (col==0){ //make button gray
@@ -123,9 +128,26 @@ public class InstrumentActivity extends AppCompatActivity {
         });
     }
 
-    public void btn_save(View v){}
+    public void btn_save(View v){
+        Intent si_scr = new Intent(this, InstrumentActivity.class);
+        si_scr.putExtra("userid",userid);
+        si_scr.putExtra("email",fields[0]);
+        si_scr.putExtra("youtube",fields[1]);
+        si_scr.putExtra("facebook",fields[2]);
+        si_scr.putExtra("about",fields[3]);
+        si_scr.putExtra("instrument", inst+","+lvl+","+genre);
+        si_scr.putExtra("from ins", 1);
+        startActivity(si_scr);
+    }
     public void btn_cancel(View v){
-
+        Intent si_scr = new Intent(this, InstrumentActivity.class);
+        si_scr.putExtra("userid",userid);
+        si_scr.putExtra("email",fields[0]);
+        si_scr.putExtra("youtube",fields[1]);
+        si_scr.putExtra("facebook",fields[2]);
+        si_scr.putExtra("about",fields[3]);
+        si_scr.putExtra("from ins", true);
+        startActivity(si_scr);
     }
 
 

@@ -9,6 +9,7 @@ public class User {
     private String facebook="";
     private String youtube="";
     private String about="";
+    private String [] instrument_info = new String[3];
     private boolean new_user;
 
 
@@ -39,7 +40,12 @@ public class User {
     }
 
     public int login() {
+        return 0;
+    }
 
+
+    public String[] getInstrument_info() {
+        return instrument_info;
     }
 
     public String getEmail() {
@@ -59,14 +65,24 @@ public class User {
     }
 
     public int check_username(){
+        return 0;
 
     }
 
     public int new_user_ok (){
-
+        return 0;
     }
 
     public void create_new_user () {
+
+    }
+
+    public void save_user(String email, String facebook, String youtube, String about, String [] instrment_information){
+        this.email=email;
+        this.facebook= facebook;
+        this.youtube=youtube;
+        this.about=about;
+        this.instrument_info=instrment_information;
 
     }
 

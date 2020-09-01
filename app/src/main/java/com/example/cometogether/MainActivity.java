@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             Intent sign_up = new Intent(this, signup122.class);
             sign_up.putExtra("userid", user.userid);
             sign_up.putExtra("new user", true);
-            sign_up.putExtra("from ins", false);
+            sign_up.putExtra("from ins", 0);
             startActivity(sign_up);
         }
         if (ok ==2){
